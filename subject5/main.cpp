@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -5,6 +6,7 @@ using namespace std;
 int main() {
     string name;
     string studentID;
+    string department;
 
     cout << "이름을 입력하세요 : ";
     getline(cin, name);
@@ -12,9 +14,13 @@ int main() {
     cout << "학번을 입력하세요 : ";
     getline(cin, studentID);
 
+    cout << "학과를 입력하세요 : ";
+    getline(cin, department);
+
     cout << "\n<출력>\n";
     cout << "이름 : " << name << endl;
     cout << "학번 : " << studentID << endl;
+    cout << "학과 : " << department << endl;
 
     return 0;
 }
